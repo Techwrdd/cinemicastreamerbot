@@ -18,7 +18,7 @@ class Var(object):
     name = str(getenv('name', 'cinemica_streamer_bot'))
     SLEEP_THRESHOLD = int(getenv('SLEEP_THRESHOLD', '60'))
     WORKERS = int(getenv('WORKERS', '4'))
-    BIN_CHANNEL = int(getenv('BIN_CHANNEL', '-1002228911934'))
+    BIN_CHANNEL = int(getenv('BIN_CHANNEL', ''))
     NEW_USER_LOG = int(getenv('NEW_USER_LOG', '-1002163060078'))
     PORT = int(getenv('PORT', '8080'))
     BIND_ADRESS = str(getenv('WEB_SERVER_BIND_ADDRESS', '0.0.0.0'))
