@@ -12,13 +12,13 @@ bisal_grp = "https://t.me/+PA8OPL2Zglk3MDM1"
 
 class Var(object):
     MULTI_CLIENT = False
-    API_ID = int(getenv('API_ID', ''))
-    API_HASH = str(getenv('API_HASH', ''))
-    BOT_TOKEN = str(getenv('BOT_TOKEN' , ''))
+    API_ID = int(getenv('API_ID', '14013342'))
+    API_HASH = str(getenv('API_HASH', 'c3e1d740fd207c7ae1b373a7546e8a62'))
+    BOT_TOKEN = str(getenv('BOT_TOKEN' , '5959006797:AAG0e-451VfnLMXdv6J3dvI_Npta2yTJwgk'))
     name = str(getenv('name', 'cinemica_streamer_bot'))
     SLEEP_THRESHOLD = int(getenv('SLEEP_THRESHOLD', '60'))
     WORKERS = int(getenv('WORKERS', '4'))
-    BIN_CHANNEL = int(getenv('BIN_CHANNEL', ''))
+    BIN_CHANNEL = int(getenv('BIN_CHANNEL', '-1002228911934'))
     NEW_USER_LOG = int(getenv('NEW_USER_LOG', '-1002163060078'))
     PORT = int(getenv('PORT', '8080'))
     BIND_ADRESS = str(getenv('WEB_SERVER_BIND_ADDRESS', '0.0.0.0'))
@@ -34,14 +34,14 @@ class Var(object):
     else:
         ON_HEROKU = False
     FQDN = str(getenv('FQDN', 'BIND_ADRESS:PORT')) if not ON_HEROKU or getenv('FQDN', '') else APP_NAME+'.herokuapp.com'
-    FQDN = "troubled-lianne-ettest-bcdcdb8d.koyeb.app"
-    HAS_SSL = True 
+    FQDN = "88.99.242.240"
+    HAS_SSL = False 
     HAS_SSL=bool(getenv('HAS_SSL',True))
     if HAS_SSL:
         URL = "https://{}/".format(FQDN)
     else:
         URL = "http://{}/".format(FQDN)
-    DATABASE_URL = str(getenv('DATABASE_URL', ''))
+    DATABASE_URL = str(getenv('DATABASE_URL', 'mongodb+srv://akshatsingh:I9te3NhL3CE5R1gp@cluster0.xkwauyj.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0'))
     UPDATES_CHANNEL = str(getenv('UPDATES_CHANNEL', 'cinemica')) 
     BANNED_CHANNELS = list(set(int(x) for x in str(getenv("BANNED_CHANNELS", "")).split()))   
     BAN_CHNL = list(set(int(x) for x in str(getenv("BAN_CHNL", "")).split()))   
